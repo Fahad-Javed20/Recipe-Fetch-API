@@ -6,7 +6,7 @@ interface RecipeItemProps {
 
 const RecipeItem = ({ item }: RecipeItemProps) => {
   return (
-    <div className="bg-white shadow-lg/30 w-[600px] h-160">
+    <div className="bg-white shadow-lg/30 w-[600px] h-170">
       <img className="h-52 w-full object-cover" src={item.image} alt="" />
       <h1 className="text-red-700 font-bold text-2xl mt-2">{item.name}</h1>
       <h1 className="font-bold text-left pl-4">Ingredients:</h1>

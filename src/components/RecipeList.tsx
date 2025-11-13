@@ -30,7 +30,7 @@ const RecipeList = () => {
 
   return (
     <div>
-      <h1>Recipe Book by Fahad Bin Javed</h1>
+      <h1 className="text-2xl font-bold text-red-700 my-4 bg-purple-400 py-2">Recipe Book by Fahad Bin Javed</h1>
       <div className="flex gap-4 flex-wrap">
         {loading && <p>Loading...</p>}
         {errors && <p>There is Error in WebPage</p>}
