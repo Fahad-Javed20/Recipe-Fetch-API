@@ -8,8 +8,8 @@ const RecipeList = () => {
   const [errors, setErrors] = useState<string>("");
 
   const fetchData = async () => {
-    setLoading(true);
     try {
+      setLoading(true);
       const response = await fetch("https://dummyjson.com/recipes");
       if (!response.ok) {
         throw new Error("There is a problem in fetching data");

@@ -11,15 +11,15 @@ const RecipeItem = ({ item }: RecipeItemProps) => {
       <h1 className="text-red-700 font-bold text-2xl mt-2">{item.name}</h1>
       <h1 className="font-bold text-left pl-4">Ingredients:</h1>
       <ul className="flex flex-wrap space-x-2 px-3 justify-center items-center">
-        {item.ingredients.map((ingredient: string, index: number) => (
-          <li key={index}>{ingredient}</li>
+        {item.ingredients.map((ingredient: string) => (
+          <li key={item.id}>{ingredient}</li>
         ))}
       </ul>
 
       <h1 className="font-bold text-left pl-4">Instructions:</h1>
       <ul className="flex flex-col flex-wrap px-3 justify-center items-center">
-        {item.instructions.map((instruction: string, index: number) => (
-          <li key={index}>{instruction}</li>
+        {item.instructions.map((instruction: string) => (
+          <li key={item.id}>{instruction}</li>
         ))}
       </ul>
 
